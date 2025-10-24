@@ -1,8 +1,8 @@
-name: 'WiNet Extractor'
-description: 'Extracts data from WiNet devices and sends to Home Assistant over MQTT.'
+name: 'My WiNet Extractor'
+description: 'Copy of original WiNet Extractor which extracts data from WiNet devices and sends to Home Assistant over MQTT.'
 version: '0.2.2'
 stage: 'stable'
-slug: 'winet-extractor'
+slug: 'my-winet-extractor'
 url: 'https://github.com/NickStallman/home-assistant-repo/tree/main/winet-extractor'
 arch:
   - armhf
@@ -22,12 +22,12 @@ services:
   - mqtt:need
 
 options:
-  winet_host: ''
-  mqtt_url: ''
+  winet_host: '192.168.86.X'
+  mqtt_url: 'mqtt://sungrow_mqtt:sungrow_mqtt@core-mosquitto:1883'
   winet_user: ''
   winet_pass: ''
   poll_interval: 10
-  analytics: true
+  analytics: false
   ssl: false
 
 schema:
