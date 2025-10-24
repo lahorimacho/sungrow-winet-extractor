@@ -1,9 +1,9 @@
-name: 'My WiNet Extractor'
-description: 'Copy of original WiNet Extractor which extracts data from WiNet devices and sends to Home Assistant over MQTT.'
+name: 'WiNet Extractor - 2'
+description: 'Copy of original WiNet Extractor from Nick Stallman (GitHub) which extracts data from WiNet devices and sends to Home Assistant over MQTT.'
 version: '0.2.2'
 stage: 'stable'
-slug: 'my-winet-extractor'
-url: 'https://github.com/NickStallman/home-assistant-repo/tree/main/winet-extractor'
+slug: 'winet-extractor-2'
+url: 'https://github.com/lahorimacho/sungrow-winet-extractor'
 arch:
   - armhf
   - armv7
